@@ -23,19 +23,16 @@ public class Lab3 {
        Class s= ArrayList.class;
       System.out.println( s.getClassLoader());
        
-         // returns the Class object associated with this class
      /*   Class cls = Class.forName("lab3.person");
        person pw=(person) cls.newInstance();
       System.out.print(pw.department);*/
       
-         // returns the ClassLoader object associated with this Class.
          Class C=p.getClass();
          ClassLoader cLoader = C.getClassLoader();
 
          if (cLoader == null) {
             System.out.println("The default system class was used.");
          } else {
-            // returns the class loader
             Class loaderClass = cLoader.getClass();
 
             System.out.println("Class associated with ClassLoader = " +
